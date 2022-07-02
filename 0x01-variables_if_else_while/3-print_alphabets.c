@@ -3,20 +3,18 @@
 #include <stdio.h>
 /**
  *main -prints the alphabet in lowercase and uppercase followed by new line*
- *return: 0
-**/
+ *return: 0.
+*/
 int main(void)
 {
-	int ch;
+	char letter;
 
-	for (ch = 97; ch <= 122; ch++)
-	{
-	putchar(ch);
-	}
-	for (ch = 65; ch <= 90; ch++)
-	{
-	putchar(ch);
-	}
-	putchar(10); /*this is ASCII code for new line*/
+	for (letter = 'a'; letter <= 'z'; letter++)
+	putchar(letter);
+	
+	for (letter = 'A'; letter <= 'Z'; letter++)
+	putchar(letter);
+	
+	putchar('\n'); /*this is ASCII code for new line*/
 	return (0);
 }
